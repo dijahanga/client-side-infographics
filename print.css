@@ -1,0 +1,15 @@
+/* Only applies in Print Preview / Print to PDF */
+body {
+  font-family: serif;
+  color: black;
+  background: none;
+}
+
+nav, footer, .no-print {
+  display: none;
+}
+
+a::after {
+  content: " (" attr(href) ")";
+  font-size: 90%;
+}
